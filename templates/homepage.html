@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+        {% for posts in post %}
+                <div class="card" style="width: 18rem;"></div>
+                    <div class="card-header">
+                        {{ posts.post_type }}
+                    </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">{{ posts.text }}</li>
+                </ul>
+                </div> 
+        {% endfor %}
+{% endblock %}
